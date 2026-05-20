@@ -143,10 +143,10 @@ const Materias = () => {
 
     try {
       setMaterias((prev) => prev.filter((m) => m.id !== materiaAEliminar))
-      setMateriaSuccess('Materia dada de baja correctamente.')
+      setMateriaSuccess('Materia eliminada correctamente.')
       setMateriaAEliminar(null)
     } catch (err) {
-      setMateriaError('No se pudo dar de baja la asignatura.')
+      setMateriaError('No se pudo eliminar la materia bro')
       setMateriaAEliminar(null)
     }
   }
